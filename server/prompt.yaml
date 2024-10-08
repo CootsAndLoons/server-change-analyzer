@@ -1,0 +1,16 @@
+analyze_change:
+  prompt: |
+    Analyze the following server change and determine if it might result in an error. 
+    If yes, compare it to the existing change records and identify any similarities.
+    
+    New change:
+    Subject: {change_subject}
+    Description: {change_description}
+    
+    Existing change records:
+    {change_records}
+    
+    Provide your analysis in the following format only, with no additional explanation:
+    Potential for error: [Yes/No]
+    Similar past changes: [List of CR numbers, comma-separated, or None if no similar changes]
+    If you don't follow this exact template I am going to kill myself
